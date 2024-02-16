@@ -1,0 +1,79 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html xmlns="http://www.w3.org/1999/xhtml" data-l10n-sync="true" lang="es-ES" dir="ltr"&gt;<br/>
+ &lt;head&gt;<br/>
+  &lt;meta http-equiv="Content-Security-Policy" content="default-src chrome:; object-src 'none'"&gt;<br/>
+  &lt;meta name="color-scheme" content="light dark"&gt;<br/>
+  &lt;title data-l10n-id="neterror-dns-not-found-title"&gt;Servidor no encontrado&lt;/title&gt;<br/>
+  &lt;link rel="stylesheet" href="chrome://global/skin/aboutNetError.css" type="text/css" media="all"&gt;<br/>
+  &lt;link rel="icon" id="favicon" href="chrome://global/skin/icons/info.svg"&gt;<br/>
+  &lt;link rel="localization" href="branding/brand.ftl"&gt;<br/>
+  &lt;link rel="localization" href="toolkit/neterror/certError.ftl"&gt;<br/>
+  &lt;link rel="localization" href="toolkit/neterror/netError.ftl"&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body class="neterror"&gt;&lt;!-- PAGE CONTAINER (for styling purposes only) --&gt;<br/>
+  &lt;div class="container"&gt;<br/>
+   &lt;div id="text-container"&gt;&lt;!-- Error Title --&gt;<br/>
+    &lt;div class="title"&gt;<br/>
+     &lt;h1 class="title-text" data-l10n-id="dnsNotFound-title"&gt;Uf. Tenemos problemas para encontrar ese sitio.&lt;/h1&gt;<br/>
+    &lt;/div&gt;&lt;!-- Short Description --&gt;<br/>
+    &lt;p id="errorShortDesc"&gt;No podemos conectar al servidor en www.despegar.com.co.&lt;/p&gt;<br/>
+    &lt;p id="errorShortDesc2"&gt;&lt;/p&gt;<br/>
+    &lt;div id="errorWhatToDo" hidden&gt;<br/>
+     &lt;p id="errorWhatToDoTitle" data-l10n-id="certerror-what-can-you-do-about-it-title"&gt;¿Qué puede hacer al respecto?&lt;/p&gt;<br/>
+     &lt;p id="badStsCertExplanation" hidden&gt;&lt;/p&gt;<br/>
+     &lt;p id="errorWhatToDoText"&gt;&lt;/p&gt;<br/>
+    &lt;/div&gt;&lt;!-- Long Description --&gt;<br/>
+    &lt;div id="errorLongDesc"&gt;<br/>
+     &lt;span data-l10n-id="neterror-dns-not-found-hint-header"&gt;&lt;strong&gt;Si escribió la dirección correcta, puede:&lt;/strong&gt;&lt;/span&gt;<br/>
+     &lt;ul&gt;<br/>
+      &lt;li data-l10n-id="neterror-dns-not-found-hint-try-again"&gt;Probar de nuevo más tarde&lt;/li&gt;<br/>
+      &lt;li data-l10n-id="neterror-dns-not-found-hint-check-network"&gt;Verificar la conexión a internet&lt;/li&gt;<br/>
+      &lt;li data-l10n-id="neterror-dns-not-found-hint-firewall"&gt;Comprobar que Firefox tiene permiso para acceder a la web (puede ser que esté conectado pero detrás de un firewall)&lt;/li&gt;<br/>
+     &lt;/ul&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;p id="trrOnlyContainer" hidden&gt;&lt;/p&gt;<br/>
+    &lt;p id="trrOnlyMessage"&gt;&lt;/p&gt;<br/>
+    &lt;div class="trr-message-container"&gt;&lt;span id="trrOnlyDescription"&gt;&lt;/span&gt;<br/>
+     &lt;p id="trrLearnMoreContainer" hidden&gt;&lt;a id="trrOnlylearnMoreLink" target="_blank" rel="noopener noreferrer" data-l10n-id="neterror-learn-more-link"&gt;Más información…&lt;/a&gt;&lt;/p&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;p data-l10n-id="neterror-dns-not-found-trr-third-party-warning2"&gt;Puede continuar con su servicio de DNS predeterminado. Sin embargo, un tercero podría ser capaz de ver los sitios web que visite.&lt;/p&gt;<br/>
+    &lt;p&gt;&lt;/p&gt;<br/>
+    &lt;p id="nativeFallbackContainer" hidden&gt;&lt;/p&gt;<br/>
+    &lt;p id="nativeFallbackMessage"&gt;&lt;/p&gt;<br/>
+    &lt;div class="trr-message-container"&gt;&lt;span id="nativeFallbackDescription"&gt;&lt;/span&gt;<br/>
+     &lt;p id="nativeFallbackLearnMoreContainer" hidden&gt;&lt;a id="nativeFallbackLearnMoreLink" target="_blank" rel="noopener noreferrer" data-l10n-id="neterror-learn-more-link"&gt;Más información…&lt;/a&gt;&lt;/p&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;p data-l10n-id="neterror-dns-not-found-trr-third-party-warning2"&gt;Puede continuar con su servicio de DNS predeterminado. Sin embargo, un tercero podría ser capaz de ver los sitios web que visite.&lt;/p&gt;<br/>
+    &lt;p&gt;&lt;/p&gt;<br/>
+    &lt;p id="tlsVersionNotice" hidden&gt;&lt;/p&gt;<br/>
+    &lt;p id="learnMoreContainer" hidden&gt;&lt;a id="learnMoreLink" target="_blank" rel="noopener noreferrer" data-telemetry-id="learn_more_link" data-l10n-id="neterror-learn-more-link" href="https://support.mozilla.org/1/firefox/122.0.1/WINNT/es-ES/connection-not-secure"&gt;Más información…&lt;/a&gt;&lt;/p&gt;<br/>
+    &lt;div id="openInNewWindowContainer" class="button-container" hidden&gt;<br/>
+     &lt;p&gt;&lt;a id="openInNewWindowButton" target="_blank" rel="noopener noreferrer"&gt; &lt;button class="primary" data-l10n-id="open-in-new-window-for-csp-or-xfo-error"&gt;Abrir sitio en una nueva ventana&lt;/button&gt;&lt;/a&gt;&lt;/p&gt;<br/>
+    &lt;/div&gt;&lt;!-- UI for option to report certificate errors to Mozilla. Removed on<br/>
+             init for other error types .--&gt;<br/>
+    &lt;div id="prefChangeContainer" class="button-container" hidden&gt;<br/>
+     &lt;p data-l10n-id="neterror-pref-reset"&gt;Parece que su configuración de seguridad de red podría estar causando esto. ¿Quiere restaurar la configuración predeterminada?&lt;/p&gt;&lt;button id="prefResetButton" class="primary" data-l10n-id="neterror-pref-reset-button"&gt;Restablecer configuración predeterminada&lt;/button&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div id="certErrorAndCaptivePortalButtonContainer" class="button-container" hidden&gt;&lt;button id="returnButton" class="primary" data-telemetry-id="return_button_top" data-l10n-id="neterror-return-to-previous-page-recommended-button"&gt;Retroceder (recomendado)&lt;/button&gt; &lt;button id="openPortalLoginPageButton" class="primary" data-l10n-id="neterror-open-portal-login-page-button" hidden&gt;Abrir página de inicio de sesión en la red&lt;/button&gt; &lt;button id="certErrorTryAgainButton" class="primary try-again" data-l10n-id="neterror-try-again-button" hidden&gt;Reintentar&lt;/button&gt; &lt;button id="advancedButton" data-telemetry-id="advanced_button" data-l10n-id="neterror-advanced-button"&gt;Avanzado…&lt;/button&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div id="netErrorButtonContainer" class="button-container"&gt;<br/>
+    &lt;button id="neterrorTryAgainButton" class="primary try-again" data-l10n-id="neterror-try-again-button" data-telemetry-id="try_again_button"&gt;Reintentar&lt;/button&gt; &lt;button id="trrExceptionButton" data-l10n-id="neterror-add-exception-button" data-telemetry-id="add_exception_button" hidden&gt;Continuar siempre para este sitio&lt;/button&gt; &lt;button id="trrSettingsButton" data-l10n-id="neterror-settings-button" data-telemetry-id="settings_button" hidden&gt;Cambiar la configuración de DNS&lt;/button&gt; &lt;button id="nativeFallbackContinueThisTimeButton" data-l10n-id="neterror-trr-continue-this-time" data-telemetry-id="continue_button" hidden&gt;Continuar esta vez&lt;/button&gt; &lt;button id="nativeFallbackIgnoreButton" data-l10n-id="neterror-disable-native-feedback-warning" data-telemetry-id="disable_warning" hidden&gt;Continuar siempre&lt;/button&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="advanced-panel-container"&gt;<br/>
+    &lt;div id="badCertAdvancedPanel" class="advanced-panel" hidden&gt;<br/>
+     &lt;p id="badCertTechnicalInfo"&gt;&lt;/p&gt;&lt;a id="viewCertificate" href="javascript:void(0)" data-l10n-id="neterror-view-certificate-link"&gt;Ver certificado&lt;/a&gt;<br/>
+     &lt;div id="advancedPanelButtonContainer" class="button-container"&gt;&lt;button id="advancedPanelReturnButton" class="primary" data-telemetry-id="return_button_adv" data-l10n-id="neterror-return-to-previous-page-recommended-button"&gt;Retroceder (recomendado)&lt;/button&gt; &lt;button id="advancedPanelTryAgainButton" class="primary try-again" data-l10n-id="neterror-try-again-button" hidden&gt;Reintentar&lt;/button&gt; &lt;button id="exceptionDialogButton" data-telemetry-id="exception_button" data-l10n-id="neterror-override-exception-button"&gt;Aceptar el riesgo y continuar&lt;/button&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div id="blockingErrorReporting" class="advanced-panel" hidden&gt;<br/>
+     &lt;p class="toggle-container-with-text"&gt;&lt;input type="checkbox" id="automaticallyReportBlockingInFuture" role="checkbox"&gt; &lt;label for="automaticallyReportBlockingInFuture" data-l10n-id="neterror-error-reporting-automatic"&gt;Informar de errores como esto ayuda a Mozilla a identificar y bloquear sitios maliciosos&lt;/label&gt;&lt;/p&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div id="certificateErrorDebugInformation" class="advanced-panel" hidden&gt;&lt;button id="copyToClipboardTop" data-telemetry-id="clipboard_button_top" data-l10n-id="neterror-copy-to-clipboard-button"&gt;Copiar texto al portapapeles&lt;/button&gt;<br/>
+     &lt;div id="certificateErrorText"&gt;&lt;/div&gt;&lt;button id="copyToClipboardBottom" data-telemetry-id="clipboard_button_bot" data-l10n-id="neterror-copy-to-clipboard-button"&gt;Copiar texto al portapapeles&lt;/button&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;script src="chrome://global/content/neterror/aboutNetErrorCodes.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="module" src="chrome://global/content/aboutNetError.mjs"&gt;&lt;/script&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
